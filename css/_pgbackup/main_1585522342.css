@@ -1446,8 +1446,7 @@ h1.intro-header::before {
     vertical-align: bottom;
 }
 
-.home-content h1,
-#emailform {
+.home-content h1, #emailform {
     text-align: left !important;
 }
 

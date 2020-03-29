@@ -698,7 +698,7 @@ label>input[type="radio"] {
  * Style Placeholder Text - (_forms.scss)
  * ------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
-    color: #969696;
+    color: #838383;
 }
 
 :-moz-placeholder {
@@ -743,7 +743,8 @@ select:-webkit-autofill:focus {
  * ------------------------------------------------------------------- */
 .email,
 input[type="email"],
-input[type="text"] {
+input[type="text"]
+{
     display: inline-block;
     font-family: "montserrat-regular", sans-serif;
     font-size: 1.5rem;
@@ -758,8 +759,8 @@ input[type="text"] {
     border-radius: .5rem;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background: rgba(70, 109, 107, 0.39);
-    background: rgba(70, 109, 107, 0.3);
+    background: #222222;
+    opacity: 0.2;
     border: .1rem solid #c5c5c5;
 }
 
@@ -848,7 +849,7 @@ button.large,
 button.stroke,
 .button.stroke {
     background: transparent !important;
-    color: #64a19d;
+    color: #64a19d; !important;
 }
 
 button.stroke:hover,
@@ -1446,13 +1447,6 @@ h1.intro-header::before {
     vertical-align: bottom;
 }
 
-.home-content h1, #emailform {
-    text-align: left !important;
-}
-
-.home-content h1 {
-    text-align: left !important;
-}
 
 .home-content .contents {
     position: relative;
@@ -2118,7 +2112,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  *  12. pricing - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
-input[type="radio"] {
+input[type="radio"]{
     display: none;
 }
 
@@ -2137,13 +2131,8 @@ input[type="radio"] {
     padding-bottom: 12rem;
 }
 
-.email.stroke {
+.email.stroke{
     color: white;
-    margin-left: 17px;
-}
-
-.email.stroke:hover {
-    border: 2px transparent solid !important;
 }
 
 #pricing h2 {
@@ -2152,18 +2141,19 @@ input[type="radio"] {
     border-radius: 30px;
 }
 
-.footer-main p,
-li,
-h4 {
+
+.footer-main p, li, h4{
     text-align: left;
 }
+
+.home-content
 
 .btn-group .button.stroke {
     border: 2px transparent solid !important;
 }
 
 .btn-group .button.stroke:hover,
-.btn-group .button.stroke:focus {
+.btn-group .button.stroke:focus{
     border: 2px solid #64a19d !important;
 }
 

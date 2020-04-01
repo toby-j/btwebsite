@@ -855,8 +855,7 @@ button.stroke,
     transition: all .3s ease;
 }
 
-.button.stroke:hover,
-.button.stroke:focus {
+.button.stroke:hover, .button.stroke:focus {
     border: 2px #1b1e21;
 }
 
@@ -864,7 +863,6 @@ button.stroke,
     -webkit-animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
     animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
-
 .button.stroke > span {
     display: block;
     overflow: hidden;
@@ -2185,6 +2183,7 @@ h4 {
     text-align: left;
 }
 
+
 .btn-group .button.stroke {
     border: 2px transparent solid !important;
 }
@@ -2934,7 +2933,6 @@ footer ul a:visited {
     .footer-info {
         text-align: center;
     }
-
     .footer-info p {
         text-align: center;
     }
@@ -3007,35 +3005,29 @@ footer ul a:visited {
 }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:600");
-
 @-webkit-keyframes short-press {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     50% {
         -webkit-transform: scale(0.9);
         transform: scale(0.9);
     }
-
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
 }
-
 @keyframes short-press {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     50% {
         -webkit-transform: scale(0.9);
         transform: scale(0.9);
     }
-
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -3047,17 +3039,21 @@ footer ul a:visited {
 }
 
 @media only screen and (max-width : 768px) {
-    .emailButtons > .btn {
+    .emailButtons > .btn{
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .emailButtons label, input{
-        display: inline-block;
-        float: left;
+    .button.stroke {
+        margin: 0 auto !important;
+    }
+
+    .emailButtons #email{
+        margin: 0 auto !important;
     }
 }
 
 #email {
+    margin: 0 auto;
 }

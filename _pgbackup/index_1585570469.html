@@ -7,18 +7,15 @@
     <head> 
         <!--- basic page needs
    ================================================== -->
+        <meta http-equiv="Content-Security-Policy" content="style-src 'self'">
         <meta charset="utf-8"> 
         <title>Dazzle</title>         
         <meta name="description" content=""> 
         <meta name="author" content="">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8 ;">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- mobile specific metas
+   ================================================== -->         
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <!-- CSS
    ================================================== -->         
         <link rel="stylesheet" href="css/base.css"> 
@@ -30,7 +27,7 @@
         <script src="js/pace.min.js"></script>         
         <!-- favicons
 	================================================== -->         
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" crossorigin="anonymous"> 
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
         <link rel="icon" href="favicon.ico" type="image/x-icon"> 
     </head>     
     <body id="top"> 
@@ -67,21 +64,11 @@
             <div class="home-content"> 
                 <div class="row contents"> 
                     <div class="home-content-left">
-                        <form id="earlyAccessEmail" method="POST">
                             <h1 data-aos="fade-up">Clearing the confusion with product ingredients</h1>
-                            <div class="emailButtons buttons aos-init aos-animate" data-aos="fade-up">
-                                <div class="col-md">
-                                    <input id="email" type="email" class="smoothscroll email stroke" placeholder="name@email.com">
-                                </div>
-                                <div class="col-md">
-                                    <button type="submit" value="Get Early Access" class="state-0 button stroke">
-                                        <span class="pre-state-msg">Submit</span>
-                                        <span class="current-state-msg hide">Sending...</span>
-                                        <span class="done-state-msg hide">Done!</span>
-                                    </button>
-                                </div>
+                            <div id="emailform" class="buttons aos-init aos-animate" data-aos="fade-up"> 
+                                <input id="emailSub" type="text" href="#download" class="smoothscroll email stroke" placeholder="name@email.com">
+                                <button onclick="writeEmail()" type="submit" value="Get Early Access" data-lity="" class="button stroke" ></button>
                             </div>
-                        </form>
                     </div>                     
                     <div class="home-image-right col-md-5 col-8 col-sm-6"> 
                         <img src="images/iphone-app-470.png" srcset="images/iphone-app-470.png 1x, images/iphone-app-940.png 2x" data-aos="fade-up"> 
@@ -265,16 +252,28 @@
         <!-- Java Script
     ================================================== -->         
         <script src="assets/js/jquery.min.js"></script>
-        <script src="js/successEmail.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
-        <script src="js/emailDatabase.js"></script>
+        <script src="assets/js/emailDatabase.js"></script>
+        <script src="js/plugins.js"></script>         
         <script src="js/main.js"></script>         
         <script type="text/javascript" src="assets/js/popper.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
         <!-- TODO: Add SDKs for Firebase products that you want to use
-             https://firebase.google.com/docs/web/setup#available-libraries -->
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB2Vw5dRkTmspLJ5g8jhcmyW0FnOvS1A_g",
+    authDomain: "beautytruth-34727.firebaseapp.com",
+    databaseURL: "https://beautytruth-34727.firebaseio.com",
+    projectId: "beautytruth-34727",
+    storageBucket: "beautytruth-34727.appspot.com",
+    messagingSenderId: "44797291280",
+    appId: "1:44797291280:web:648a47facc3f8beea61395"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
     </body>
 </html>

@@ -2938,6 +2938,9 @@ footer ul a:visited {
     .footer-info {
         text-align: center;
     }
+    .footer-info p {
+        text-align: center;
+    }
 
     #go-top {
         bottom: 0;

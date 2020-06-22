@@ -103,9 +103,7 @@ body[data-aos-delay='300'] [data-aos] {
 [data-aos][data-aos][data-aos-delay='300'].aos-animate,
 body[data-aos-delay='300'] [data-aos].aos-animate {
     transition-delay: .3s;
-    margin-top: 45px;
-    margin-bottom: 30px;
-    text-align: center;
+    margin-top: 12px;
 }
 
 [data-aos][data-aos][data-aos-duration='350'],

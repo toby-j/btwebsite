@@ -37,8 +37,9 @@ function getInputVal(id) {
 function  saveMessage(email) {
     updateButtonMsg();
     try {
-        var newEmailStore = emailStore.push();
-        newEmailStore.set(email);
+//write email verification shit
+        }
+
     }
     catch(err) {
         window.alert(err);

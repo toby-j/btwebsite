@@ -320,6 +320,8 @@ p,
 blockquote,
 th,
 td {
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -401,11 +403,12 @@ textarea {
  *
  * ------------------------------------------------------------------- */
 .row {
-    width: 92%;
+    width: 94%;
     max-width: 1170px;
     margin-left: auto;
-    padding-bottom: 21px;
     margin-right: auto;
+    margin-top: 0;
+    padding-bottom: 21px;
 }
 
 .row:after {

@@ -410,6 +410,7 @@ dl,
 form,
 .fluid-video-wrapper,
 .ss-custom-select {
+    margin-bottom: 3rem;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2214,6 +2215,7 @@ h4 {
     text-align: center;
 }
 
+
 .pricing-intro {
     padding-top: .6rem;
 }
@@ -2256,6 +2258,8 @@ h4 {
 .paragraph3 {
     margin-top: 150%;
 }
+
+
 
 .pricing-table .plan-block {
     background: #ffffff;

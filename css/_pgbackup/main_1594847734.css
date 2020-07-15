@@ -410,8 +410,6 @@ dl,
 form,
 .fluid-video-wrapper,
 .ss-custom-select {
-    color: #ffffff;
-    text-align: left;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1805,7 +1803,6 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
     .home-content-left h1 {
         margin-bottom: 3.6rem;
-        color: #ffffff;
     }
 
     .home-image-right {
@@ -2859,8 +2856,8 @@ h4 {
      *
      * ------------------------------------------------------------------- */
 footer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 9rem;
+    padding-bottom: 4.2rem;
     font-size: 1.5rem;
     line-height: 2.7rem;
     color: rgba(255, 255, 255, 0.25);
@@ -2882,7 +2879,6 @@ footer h4 {
     padding-bottom: 2.4rem;
     margin-bottom: 2.4rem;
     position: relative;
-    text-align: center;
 }
 
 footer h4::before {
@@ -2892,11 +2888,7 @@ footer h4::before {
     height: 1px;
     background-color: rgba(255, 255, 255, 0.05);
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
     left: 0;
-    right: 0;
-    text-align: center;
     bottom: 0;
 }
 
@@ -2916,7 +2908,8 @@ footer ul a:visited {
 
 .footer-logo {
     display: block;
-    margin: 0 auto;
+    margin: 0 0 5.4rem 0;
+    padding: 0;
     outline: 0;
     border: none;
     width: 188px;
@@ -2928,14 +2921,6 @@ footer ul a:visited {
     color: transparent;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-}
-
-.footer-mission p {
-    font-size: 20px !important
-    text-align: center;
-}
-.footer-logo {
-    margin-bottom: 4rem;
 }
 
 .footer-social-list {
@@ -3028,7 +3013,7 @@ footer ul a:visited {
 }
 
 .footer-bottom {
-    margin-top: 3rem;
+    margin-top: 6.6rem;
     text-align: center;
 }
 

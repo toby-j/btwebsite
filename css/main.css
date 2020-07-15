@@ -1172,7 +1172,7 @@ h1.intro-header::before {
 .header-logo {
     position: absolute;
     left: 40px;
-    top: 50%;
+    top: 5rem;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -2931,7 +2931,7 @@ footer ul a:visited {
 }
 
 .footer-mission p {
-    font-size: 20px !important
+    font-size: 20px !important;
     text-align: center;
 }
 .footer-logo {
@@ -3232,18 +3232,25 @@ footer ul a:visited {
     display: none;
 }
 
+.summery {
+    text-align: left;
+}
+
 @media only screen and (max-width : 768px) {
-    .emailButtons > .btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .banter {
+        display: none;
+    }
+    .pricing-content {
+        display: none;
+    }
+    .slideshow-container .next {
+        right: 0;
+    }
+    .slideshow-container .prev {
+        left: 0;
     }
 
-    .emailButtons label,
-    input {
-        display: inline-block;
-        float: left;
-    }
+    /*We can write the slideshow formatting here */
 }
 
 .logos img {
@@ -3264,3 +3271,4 @@ footer ul a:visited {
     max-height: 400px;
     width: auto !important;
 }
+

@@ -37,14 +37,11 @@ function getInputVal(id) {
 function  saveMessage(email) {
     updateButtonMsg();
     try {
-//write email verification shit
-        }
-
+        emailStore.push(email)
     }
-    catch(err) {
-        window.alert(err);
+    catch(e) {
+        alert("We weren't able to store the email" + e)
     }
-    //show success alert
     setTimeout(finalButtonMsg, 500);
 }
 

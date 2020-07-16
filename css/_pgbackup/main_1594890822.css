@@ -2184,7 +2184,6 @@ input[type="radio"] {
     margin-top: 10px !important;
     margin-bottom: 2.6rem;
     border-radius: 30px;
-    text-align: left;
 }
 
 .add-ons {
@@ -2940,7 +2939,6 @@ footer ul a:visited {
     font-size: 20px !important;
     text-align: center;
 }
-
 .footer-logo {
     margin-bottom: 4rem;
 }
@@ -3247,19 +3245,15 @@ footer ul a:visited {
     .banter {
         display: none;
     }
-
     .pricing-content {
         display: none;
     }
-
     .slideshow-container .next {
         right: 0;
     }
-
     .slideshow-container .prev {
         left: 0;
     }
-
     /*We can write the slideshow formatting here */
 }
 
@@ -3281,3 +3275,4 @@ footer ul a:visited {
     max-height: 400px;
     width: auto !important;
 }
+

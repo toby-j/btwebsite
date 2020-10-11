@@ -62,7 +62,7 @@ body {
 }
 
 body {
-    background: #1b1e21;
+    background: #141515;
     font-family: "muli-regular", sans-serif;
     font-size: 1.6rem;
     line-height: 1.875;
@@ -142,7 +142,6 @@ h2,
 .h02 {
     font-size: 2.8rem;
     line-height: 1.25;
-    text-align: left;
 }
 
 h3,
@@ -1497,13 +1496,13 @@ h1.intro-header::before {
 
 .home-content-left h3 {
     font-family: "montserrat-light", sans-serif;
+    margin: 0;
     font-size: 24px;
     font-style: normal;
     line-height: 36px;
     letter-spacing: normal;
     text-decoration: unset;
     color: #FFFFFF;
-    float: left;
 }
 
 .home-content-left h1 {
@@ -1512,7 +1511,7 @@ h1.intro-header::before {
     letter-spacing: -.05rem;
     line-height: 1.269;
     color: #ffffff;
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
 }
 
 .home-content-left .button.stroke {
@@ -1556,7 +1555,6 @@ h1.intro-header::before {
 
 /* home social-list */
 .home-social-list {
-    display: none;
     position: absolute;
     right: 42px;
     top: 50%;

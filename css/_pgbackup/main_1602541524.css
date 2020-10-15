@@ -2871,6 +2871,7 @@ footer {
     padding-bottom: 2rem;
     font-size: 1.5rem;
     line-height: 2.7rem;
+    backgrond-color: #343a40 !important;
     color: rgba(255, 255, 255, 0.25);
 }
 

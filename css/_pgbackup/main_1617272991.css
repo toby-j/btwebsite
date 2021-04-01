@@ -62,7 +62,7 @@ body {
 }
 
 body {
-    background: #64a19d;
+    background: #1b1e21;
     font-family: "muli-regular", sans-serif;
     font-size: 1.6rem;
     line-height: 1.875;
@@ -766,11 +766,6 @@ input[type="text"] {
     border: .1rem solid #c5c5c5;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
-    opacity: 0.85; /* Firefox */
-}
-
 .button,
 button,
 input[type="submit"],
@@ -1432,8 +1427,42 @@ h1.intro-header::before {
  * ------------------------------------------------------------------- */
 #home {
     width: 100%;
-    display: flex;
+    height: 786px;
+    min-height: 786px;
     background-color: #64a19d;
+    position: relative;
+    display: table;
+}
+
+#home .shadow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    background: -moz-linear-gradient(left, black 0%, black 20%, transparent 100%);
+
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, black 0%, black 20%, transparent 100%);
+
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, black 0%, black 20%, transparent 100%);
+
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000', GradientType=1);
+
+    /* IE6-9 */
+}
+
+#home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    background-color: #000000;
 }
 
 .no-js #home {
@@ -1441,19 +1470,17 @@ h1.intro-header::before {
 }
 
 .home-content {
-    display: table;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    display: table-cell;
     width: 100%;
+    height: 100%;
+    vertical-align: bottom;
 }
 
 .home-content img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 50%;
     margin-bottom: 50px;
 }
 
@@ -1467,18 +1494,13 @@ h1.intro-header::before {
 }
 
 .home-content .contents {
-    display: table-cell;
-    vertical-align: middle;
+    position: relative;
 }
 
 .home-content-left {
     padding: 15rem 0 12rem 40px;
     position: relative;
-    width: 100%;
-}
-
-.home-content-left-privacy h1 {
-    margin-bottom: 5%;
+    width: 50%;
 }
 
 .home-content-left h3 {
@@ -1781,14 +1803,6 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     #home {
         height: auto;
         min-height: 840px;
-    }
-
-    .home-content img {
-        width: 100%;
-    }
-
-    .header-logo {
-        display: none;
     }
 
     #home,
@@ -2171,7 +2185,7 @@ input[type="radio"] {
 }
 
 .email.stroke {
-    color: #FFFFFF;
+    color: white;
 }
 
 .email.stroke:hover {
@@ -2865,20 +2879,16 @@ h4 {
      *
      * ------------------------------------------------------------------- */
 footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-size: 1.5rem;
     line-height: 2.7rem;
-    color: rgba(255, 255, 255, 0.50);
-    width: 100%;
-    height: 28px;
-    position: absolute;
-    bottom: 50px;
-    left: 0px;
-    text-align: center;
+    color: rgba(255, 255, 255, 0.25);
 }
 
 footer a,
 footer a:visited {
-    color: white;
+    color: #64a19d;
 }
 
 footer a:hover,
@@ -2976,6 +2986,16 @@ footer ul a:visited {
 
 .footer-subscribe #mc-form {
     width: 100%;
+}
+
+.footer-subscribe #mc-form input[type="email"] {
+    width: 100%;
+    height: 5.4rem;
+    padding: 1.2rem 100px 1.2rem 60px;
+    background: url(../images/email-icon.png) 20px center no-repeat, rgba(0, 0, 0, 0.1);
+    background-size: 24px 16px, auto;
+    margin-bottom: 1.8rem;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .footer-subscribe #mc-form input[type="email"]:focus {
